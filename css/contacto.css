@@ -1,0 +1,29 @@
+
+.contacto-form {
+	width: 80%;
+	min-height: 60vh;
+
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.campo-form {
+	background-color: #333;
+	margin: 10px;
+	padding: 10px;
+}
+
+.contacto-form button {
+	background-color: #333;
+	color: #00ff00;
+	margin: 10px;
+	padding: 10px;
+}
+
+.contacto-form button:hover {
+	cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.contenedor-cartas {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contenedor-cartas a {
+  text-decoration: none;
+  color: #00ff00;
+  display: block;
+}
+
+.carta {
+	width: 300px;
+	margin: 20px;
+	border: 2px solid #00ff00;
+    box-shadow: 2px 4px 8px #333; 
+    transition: box-shadow 0.3s ease-in-out; /* animacion suave para sommbra */
+}
+
+.carta:hover {
+  box-shadow: 2px 8px 16px #494949;
+}
+
+.img-carta {
+	width: 100%;
+}
+
+.cuerpo-carta {
+	text-align: center;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNM: Juego</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"> <pre class="logo">
+
+            ░▒▓█▓▒░░▒▓█▓▒░░▒▓███████▓▒░ ░▒▓██████████████▓▒░               ░▒▓████████▓▒░░▒▓█▓▒░              ░▒▓██████▓▒░░▒▓████████▓▒░░▒▓███████▓▒░  ░▒▓██████▓▒░       ░▒▓█▓▒░        ░▒▓██████▓▒░ ░▒▓███████▓▒░  ░▒▓██████▓▒░  
+            ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
+            ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
+            ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░              ░▒▓██████▓▒░  ░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓███████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓████████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
+            ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
+            ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░             ░▒▓█▓▒░░▒▓█▓▒░  ░▒▓█▓▒░    ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░       ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
+              ░▒▓██████▓▒░ ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░              ░▒▓████████▓▒░░▒▓████████▓▒░       ░▒▓██████▓▒░   ░▒▓█▓▒░    ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓██████▓▒░       ░▒▓████████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓███████▓▒░  ░▒▓██████▓▒░  
+                                                                                                                                                                                                                                    
+            </pre></a>
+        <button class="menu-toggle">&#9776;</button> 
+        <!-- aca creamos el boton de hamburguesa,con su clase y los caracteres raros son lit las 3 liñitas -->
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mujeres.html">Mujeres/Historia</a></li>
+            <li><a href="artespiritual.html">ART-Espiritual</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="#">juego</a></li>
+            <li><a href="contacto.html">¡Contactanos!</a></li>
+            <li><a href="desarrollador.html">Acerca de</a></li> 
+        </ul>
+    </nav>
+    <header class="banner-general">
+        <pre>
+
+            ██╗██╗   ██╗███████╗ ██████╗  ██████╗     ██╗███╗   ██╗████████╗███████╗██████╗  █████╗  ██████╗████████╗██╗██╗   ██╗ ██████╗ 
+            ██║██║   ██║██╔════╝██╔════╝ ██╔═══██╗    ██║████╗  ██║╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██║██║   ██║██╔═══██╗
+            ██║██║   ██║█████╗  ██║  ███╗██║   ██║    ██║██╔██╗ ██║   ██║   █████╗  ██████╔╝███████║██║        ██║   ██║██║   ██║██║   ██║
+       ██   ██║██║   ██║██╔══╝  ██║   ██║██║   ██║    ██║██║╚██╗██║   ██║   ██╔══╝  ██╔══██╗██╔══██║██║        ██║   ██║╚██╗ ██╔╝██║   ██║
+       ╚█████╔╝╚██████╔╝███████╗╚██████╔╝╚██████╔╝    ██║██║ ╚████║   ██║   ███████╗██║  ██║██║  ██║╚██████╗   ██║   ██║ ╚████╔╝ ╚██████╔╝
+        ╚════╝  ╚═════╝ ╚══════╝ ╚═════╝  ╚═════╝     ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝   ╚═╝   ╚═╝  ╚═══╝   ╚═════╝ 
+                                                                                                                                          </pre>
+    </header>
+ <main>
+<h2>¡Responde las siguientes preguntas, y chequea tus resultados!</h2>
+ <div class="resaltadoverde">
+
+  <section id="p0">
+    <br>
+    <p><strong>¿Quien es Hilma Af Klint?</strong></p>
+  <label>
+    <input type="radio" value="1" name="p0"onclick="respuesta(0,this)"> Una autora
+  </label>
+  <label>
+    <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Una Lavandera
+  </label> <label>
+    <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Una pintora
+  </label>
+  </section>
+
+<br>
+
+  <section id="p1">
+    <p><strong>¿Donde Nacio?</strong></p>
+  <label>
+    <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Suecia, Solana.
+  </label>
+  <label>
+    <input type="radio" value="2" name="p1"onclick="respuesta(1,this)"> Canada, Toronto.
+  </label> <label>
+    <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Mexico, Ciudad de Mexico.
+  </label>
+  </section> 
+
+  <br>
+  
+  <section id="p2">
+    <p><strong>3-¿En qué se inspiro su arte?</strong></p>
+  <label>
+    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> En Arte Abstracto.
+  </label>
+  <label>
+    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> En Arte Espiritual y Feminismo.
+  </label> <label>
+    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> En paisajes de la zona donde vivia.
+  </label>
+  </section>
+
+  <br>
+
+  <section id="p3">
+    <p><strong>4-¿Que significa el nombre de Este sitio web?</strong></p>
+  <label>
+    <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> ARTE-COLORES Y MUSICA.
+  </label>
+  <label>
+    <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> ARTE- SONIDO Y MUJERES.
+  </label> <label>
+    <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">ARTE- ESPIRITU Y MUJERES.
+  </label>
+  </section>
+
+  <br>
+<section id="p4">
+    <p><strong>5-¿De que año es la pintura "Moses" de Frida Khalo?.</strong></p>
+  <label>
+    <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> 1945.
+  </label>
+  <label>
+    <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> 1870.
+  </label> <label>
+    <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> 1950.
+  </label>
+  </section>
+
+<br>
+<button onclick="corregir()">CORREGIR</button>
+<br>
+<div>Cantidad acertadas: <span id="resultado"></span></div>
+
+</div>
+</main>
+    <hr>
+ <!-- Footer -->
+ <!-- Footer -->
+ <footer class="contenedor-footer">
+  <div class="contenedor-wrap">
+    <div class="contenedor-izquierda">
+       <p><strong>¿Gracias por pasarte <3! </strong></p>
+  </div>
+  <div class="contenedor-derecha">
+     <p><strong><a href="contacto.html">¡Contactanos!</a></strong></p>
+  </div>
+ </div>
+</footer>
+     <script src="js/menu.js"></script>
+     <script src="js/juego.js"></script>
+</body>
+</html>

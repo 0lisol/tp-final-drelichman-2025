@@ -1,0 +1,67 @@
+
+.navbar {
+    display: block;
+    background: #333;
+    color: #00ff00;
+    padding: 15px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #00ff00;
+    display: block;
+}
+
+.logo {
+    font-size: 0.5vw;
+    font-weight: bold;
+    color: #00ff00;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color:  #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1rem;
+    color: #00ff00;
+    cursor: pointer;
+}
+
+/* --- Diseño para escritorio de pc --- */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
