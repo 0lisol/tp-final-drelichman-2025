@@ -33,20 +33,36 @@
     </nav>
 <main>
 
-    <iframe  id="GaleriaIframe" src="galeriaiframe.html" frameborder="0">Galeria</iframe>
+    <iframe  id="iframe-galeria" src="galeriaiframe.html">Galeria</iframe>
+       <!-- Overlay (Lightbox) para mostrar la imagen en grande -->
+       <div id="lightbox">
+
+        <!-- Botón para cerrar el lightbox -->
+        <button id="close">&times;</button>
+
+        <!-- Imagen ampliada -->
+        <img id="lightbox-img" src="" alt="Imagen grande">
+        
+        <!-- Botones para navegar entre imágenes -->
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+    </div>
 
 </main>
  <!-- Footer -->
  <footer class="contenedor-footer">
     <div class="contenedor-wrap">
       <div class="contenedor-izquierda">
-         <p><strong>¿Gracias por pasarte <3! </strong></p>
+         <p><strong>¡Gracias por pasarte <3! </strong></p>
     </div>
     <div class="contenedor-derecha">
        <p><strong><a href="contacto.html">¡Contactanos!</a></strong></p>
     </div>
    </div>
 </footer>
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/exterior-iframe.js"></script>
 </body>
 </html>
